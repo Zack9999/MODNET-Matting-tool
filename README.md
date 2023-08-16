@@ -34,16 +34,13 @@
 
 
  ## 源码编译</h2>  
- 1.下载源码到本地  
- 2.Visual Studio打开.sln项目解决方案  
- 3.安装Nuget包  
-  3.1在Visual Studio中，鼠标右键单击项目并选择“管理NuGet程序包”。  
-  3.2在“NuGet包管理器”窗口中，选择“浏览”选项卡。  
-  3.3搜索Microsoft.ML.OnnxRuntime，选择1.15.1版本，点击安装  
-  3.4搜索OpenCvSharp4,选择4.8.0版本，点击安装  
-  3.5搜索OpenCvSharp4.runtime.win,选择4.8.0版本，点击安装  
-  3.6找到Debug或者Release下的ScreenCapture.dll,添加到引用中  
- 4.将MODNET.onnx放到exe路径下  
- 5.运行程序
+1. 下载源码到本地  
+1. 解压Model目录
+1. Visual Studio打开.sln项目解决方案  
+1. 安装Nuget包  
+    1. 在Visual Studio中，鼠标右键单击项目并选择“管理NuGet程序包”。  
+    1. 在“NuGet包管理器”窗口中，选择“安装”选项卡。
+    2. 点击“还原”按钮。
+2. 运行程序
 
 注意：有时前景图像中可能带有一些碎片，可以使用OpenCV最大连通域算法去掉小的碎片。
